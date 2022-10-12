@@ -74,17 +74,17 @@ Console.WriteLine("-----------------------------------------------------------")
         int numb1 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Enter another number: ");
         int numb2 = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("The Remainder of two numbers is : {0}", Divides(numb1, numb2));
+        Console.WriteLine("The Division of two numbers is : {0}", Divides(numb1, numb2));
 
 
 
 
-
-        Console.WriteLine("MENU");
+        Console.WriteLine("n/MENU");
         Console.WriteLine("--------------------------------------------------");
 
         Console.WriteLine("Here are the options:");
         Console.WriteLine("1-Addition.");
+        Console.WriteLine("2-Substraction.");
         Console.WriteLine("3-Multiplication.");
         Console.WriteLine("4-Division.");
         Console.WriteLine("5-Exit.");
@@ -165,7 +165,9 @@ Console.WriteLine("-----------------------------------------------------------")
     public static int Divides(int numb1, int numb2)
     {
         int total3;
-        total3 = numb1 % numb2;
+        total3 = numb1 / numb2;
         return total3;
+    
     }
+
 }
